@@ -12,30 +12,37 @@ The Nevis Mobile Authentication Client SDK is a software development kit to deve
 
 # Installation with Gradle
 
-The Nevis Mobile Authentication Client SDK is published as a Github package in this repository. You have to specify this repository in the `build.gradle` of your application.
+The Nevis Mobile Authentication Client SDK is published as a GitHub package in this repository. You have to specify this repository in the `build.gradle` of your application.
 
 ```
 buildscript {
     repositories {
         maven {
             url "https://maven.pkg.github.com/nevissecurity/nevis-mobile-authentication-sdk-android-package"
+            credentials {
+               username = <GITHUB_USERNAME>
+               password = <GITHUB_PERSONAL_ACCESS_TOKEN>
+            }
         }
     }
 }
 
 ```
 
+> **Warning**
+> Accessing GitHub packages requires you to have a GitHub account. You must provide a Personal Access Token, as described [here](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry#using-a-published-package).
+
 Then you can use the Mobile Authentication SDK, by declaring as a dependency in your `build.gradle`:
 
 ```
 dependencies {
-    implementation "ch.nevis:nevis-mobile-authentication-sdk-android-debug:3.0.0.1366"
+    implementation "ch.nevis:nevis-mobile-authentication-sdk-android-debug:3.0.0.1333"
 }
 
 ```
 
 > **Warning**
-> This repository only exposes the `debug` flavor. To use the `release` flavor contact us on [sales@nevis.net](mailto:sales@nevis.net) 
+> This repository only exposes the `debug` flavor. To use the `release` flavor contact us on [sales@nevis.net](mailto:sales@nevis.net).
 
 For additional information, see the [Android Installation](https://docs.nevis.net/mobilesdk/guide/installation/android-installation) of the Nevis documentation.
 
