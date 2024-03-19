@@ -36,7 +36,7 @@ Then you can use the Mobile Authentication SDK, by declaring as a dependency in 
 
 ```
 dependencies {
-    implementation "ch.nevis:nevis-mobile-authentication-sdk-android-debug:3.6.1.1503"
+    implementation "ch.nevis:nevis-mobile-authentication-sdk-android-debug:3.6.2.1525"
 }
 
 ```
